@@ -1,0 +1,96 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0;
+    background: linear-gradient(to right, rgb(60, 0, 212) , rgb(255, 0, 0));;
+}
+
+
+.c-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 6rem);
+    grid-template-rows: minmax(7rem, auto) repeat(5, 6rem);
+    margin-top: 4rem;
+    margin-left: 1rem;
+    background: rgb(235, 235, 235);
+    border-radius: 8px;
+    width: 26rem;
+    justify-content: center;
+    margin-left: 40%;
+}
+
+.output{
+    grid-column: span 4;
+    background-color: #ecf0f3;
+    border: none;
+    min-height: 55px;
+    max-height: auto;
+    width: 220px;
+    border-radius: 30px;
+    box-shadow: inset -5px -5px 12px #fff,
+                inset 5px 5px 12px rgba(0, 0, 0, 0.18);
+    color: rgb(70, 70, 70);
+    display: flex;
+    margin:40px auto 30px ;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: .75rem;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.c-grid>button{
+    background-color: #ecf0f3;
+    box-shadow: -5px -5px 12px #fff,     
+                5px 5px 12px rgba(0, 0, 0, 0.16);
+    font-size: 2rem;
+    cursor: pointer;
+    height: auto;
+    width: auto;
+    border-radius: 50px;
+    transform: scale(.8);
+    border: none;
+}
+
+.c-grid>button:hover{
+    background-color: rgb(211, 211, 211);
+}
+
+.c-grid>button:nth-of-type(1){
+    color: rgb(0, 200, 255);
+}
+
+.c-grid>button:nth-of-type(2){
+    color: red;
+}
+
+.c-grid>button:nth-of-type(19){
+    color: rgb(13, 202, 13);
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.prev-operand{
+    color: rgba(120, 120, 120, 0.785);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.cur-operand{
+    color: rgb(114, 110, 110);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 480px){
+    .c-grid{
+        margin-left: 6.5rem;
+        margin-top: 10rem;
+        transform: scale(1.1);
+        height: 50rem;
+    }
+}
