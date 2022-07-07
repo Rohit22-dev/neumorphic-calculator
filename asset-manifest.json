@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/neumorphic-calculator/static/css/main.03210b1a.css",
+    "main.js": "/neumorphic-calculator/static/js/main.0f4ec452.js",
+    "index.html": "/neumorphic-calculator/index.html",
+    "main.03210b1a.css.map": "/neumorphic-calculator/static/css/main.03210b1a.css.map",
+    "main.0f4ec452.js.map": "/neumorphic-calculator/static/js/main.0f4ec452.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.03210b1a.css",
+    "static/js/main.0f4ec452.js"
+  ]
+}
